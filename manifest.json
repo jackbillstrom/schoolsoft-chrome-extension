@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "SchoolSoft Notis",
+  "version": "0.1",
+  "description": "Ett tillägg som notifierar om händelser på SchoolSoft-",
+  "permissions": [
+        "cookies",
+        "http://*/*",
+        "https://*/*",
+        "webRequest",
+        "storage",
+        "tabs",
+        "notifications"
+    ],
+
+  "content_scripts": [{
+    "matches": ["http://*/*","https://*/*"],
+    "js": ["js/jquery.js", "js/background.js", "js/popup.js"]
+    }],
+
+    "background": {
+      "page": "background.html"
+    },
+
+    "content_security_policy": "script-src 'self'; object-src 'self'",
+
+    "icons": { 
+      "48": "img/calculator-16.png"
+    },
+    "browser_action": {
+      "default_title": "",
+      "default_icon": "img/calculator-16.png",
+      "default_popup": "popup.html"
+    }
+}

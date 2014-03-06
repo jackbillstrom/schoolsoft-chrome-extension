@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SchoolSoft Notis | Installation</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <center>
+        <div class="input">
+            <img class="logotype" src="/img/s.png" alt="">
+            <div class="progress">
+                <div class="bar" style="width: 6%;"></div>
+            </div>
+
+            <div class="step1">
+                <p>Fyll i din SchoolSoft-URL</p>
+                <select class="form-control" id="usertype">
+                    <option value="0">Lärare</option>
+                    <option value="1">Elev</option>
+                    <option value="2">Vårdnadshavare</option>
+                </select>
+                <p class="second">Välj din användartyp</p>
+                <input class="form-control" type="text" id="server" placeholder="https://sms7.schoolsoft.se/nti/jsp/Login.jsp" />
+                <a href="#" data-next="step2" class="btn">Nästa</a>
+            </div>
+            <div class="step2">
+                <p>Användarnamn & lösenord</p>
+                <input class="form-control" type="text" id="username" placeholder="Användarnamn" />
+                <input class="form-control" type="password" id="password" placeholder="Lösenord" />
+                <a href="#" data-next="step3" class="btn">Nästa</a>
+            </div>
+            <div class="step3">
+                <div id="circleG">
+                    <div id="circleG_1" class="circleG"></div>
+                    <div id="circleG_2" class="circleG"></div>
+                    <div id="circleG_3" class="circleG"></div>
+                </div>
+                <a href="#" data-next="test" class="btn">Testa</a>
+                <img id="check" height="70px" width="70px" src="img/ok.svg" />
+            </div>
+        </div>
+    </center>
+
+    <script src="js/popup.js"></script>
+    <script src="js/background.js">
+    </script>
+</body>
+
+</html>
