@@ -1,3 +1,9 @@
+```
+This project is now marked as archived, since I've never updated it + I had some nasty code in there. 
+For e.g no error handling, jQuery-dominant and even some hardcoded endpoints for my specific schoolsoft instance 😬 
+```
+
+
 schoolsoft-chrome-extension
 ===========================
 
